@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 960px;
+    height: 960px;
+    margin-top: 20px;
+    padding: 150px;
+    box-sizing: border-box;
+    border-radius: 150px;
+}
+
+.squares{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    flex: 1 1 0;
+}
+
+.rows{
+    display: flex;
+    flex: 1 1 0;
+}
+
+button{
+    background-color: cadetblue;
+    border-radius: 60px;
+    padding: 30px 60px;
+    border: none;
+    font-size: 20px;
+    color: cyan;
+}
+
+button:hover{
+    padding: 31px 62px;
+    transition: 0.2s;
+}
+
+p{
+    font-size: 40px;
+}
+
+h1{
+    font-size: 5rem;
+    background-color: black;
+    color: white;
+    align-self: stretch;
+    text-align: center;
+    margin: -8px;
+}
