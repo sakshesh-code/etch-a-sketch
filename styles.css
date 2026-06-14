@@ -21,6 +21,7 @@ body{
     background-color: whitesmoke;
     box-sizing: border-box;
     flex: 1 1 0;
+    display: flex;
 }
 
 .rows{
@@ -40,6 +41,7 @@ button{
 button:hover{
     padding: 31px 62px;
     transition: 0.2s;
+    margin-bottom: -2px;
 }
 
 p{
@@ -53,4 +55,10 @@ h1{
     align-self: stretch;
     text-align: center;
     margin: -8px;
+}
+
+button:active{
+    padding: 28px 58px;
+    transition: 0.2s;
+    margin-bottom: 4px;
 }

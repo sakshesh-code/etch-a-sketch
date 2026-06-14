@@ -23,9 +23,8 @@ btn.addEventListener("click", (e)=>{
 
     //Changing color of grid on hover
     const squares = document.querySelectorAll(".squares");
-    squares.forEach((square)=>{
-        square.addEventListener("mouseover", (e)=>e.target.style.backgroundColor = "black");
-    })
+    squares.forEach(randomBg);
+
 });
 
 //Default size of grid
@@ -59,6 +58,16 @@ function createSquares(size){
 
 function getUserInput(){
     return prompt("Enter size between 10 and 100");  
-}
+};
+
+function randomBg(element){
+
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+
+        element.addEventListener("mouseover", (e)=>e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`);
+
+};
 
 //-------------------------------------/
