@@ -11,7 +11,7 @@ btn.addEventListener("click", (e)=>{
 
     const size = getUserInput();
 
-    if(size > 100 || size < 10){
+    if(size > 100 || size < 10 || !Number.isInteger(parseInt(size))){
         createRows(1);
         createSquares(1);
         return alert("Invalid Number, Please enter a number between 10 and 100.");
