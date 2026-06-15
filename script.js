@@ -66,8 +66,19 @@ function randomBg(element){
         const g = Math.floor(Math.random() * 256);
         const b = Math.floor(Math.random() * 256);
 
-        element.addEventListener("mouseover", (e)=>e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`);
+        let interaction = 1;
+
+        element.addEventListener("mouseover", (e)=>{
+            e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+            //Increases opacity on each interaction until fully opaque
+            if(interaction < 10){
+                e.target.style.opacity = (interaction * 10) + "%"
+                interaction++;
+            }
+        });
 
 };
 
 //-------------------------------------/
+
